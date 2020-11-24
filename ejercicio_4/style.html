@@ -1,5 +1,3 @@
-							
-							
 <!DOCTYPE html> 
 	<html lang="es">
 	<head>
@@ -15,31 +13,27 @@
 				width:1200px;
 				background-color:#64966F;
 				}
-		#td1	{
-				text-align:center;
-				}
-		#tblfoto{
-				display:inline-block;
-				width:549.6px;
-				}
-		#td101  {
-				background-image: url('sta.jpg');
-				width:546px;
-				height:350px
-				}
-		h1		{
-				text-align:center;
-				}
-		#sh1	{
-				color:white;
-				font-size:1.5em;
-				text-decoration:underline;
-				}
 		#fondo2 {
 				display:inline-block;
 				padding-top:13.5px;
 				width:756.8px;
 				background-color:#64966F;
+				}
+		#tblan  {
+				background-color:white;
+				width:200px;
+				}
+		#tblfoto{
+				display:inline-block;
+				width:549.6px;
+				}
+		#td1	{
+				text-align:center;
+				}
+		#td101  {
+				background-image: url('sta.jpg');
+				width:546px;
+				height:350px
 				}
 		#td2	{
 				padding-top:1.8px;
@@ -48,10 +42,15 @@
 				width:740px;
 				height:60px
 				}
-		#br		{
+		#spdd	{
+				padding-top:3px;
+				color:#D6ECDB;
+				font-style:italic;
+				}
+		.br		{
 				height:0em;
 				}		
-		#mark	{
+		.mark	{
 				font-weight:bold;
 				background-color:yellow;
 				color: black;
@@ -61,22 +60,39 @@
 				text-align:center;
 				width:751.6px;
 				}
+		#sh1	{
+				color:white;
+				font-size:1.5em;
+				text-decoration:underline;
+				}
+		.coltex {
+				color:#D6ECDB;
+				font-style:italic;
+				}
+		.tizq	{
+				text-align:left;
+				}
+		.tach	{
+				text-decoration:line-through;
+				text-align:left;
+				}
+		h1		{
+				text-align:center;
+				}
 		h2		{
 				text-decoration:underline;
 				}
-		#spdd	{
-				padding-top:3px;
-				color:#D6ECDB;
-				font-style:italic;
+		img		{
+				width: 400px;
+				height: 250px;
+				border: 0;
 				}
 		fieldset{
 				text-align:left;
 				}
-		#coltex {
-				color:#D6ECDB;
-				font-style:italic;
+		th		{
+				text-align:center;
 				}
-		
 		
 	</style>
 	</head>	
@@ -100,9 +116,9 @@
 							<td id="td2">
 								En esta página vamos a experimentar las bases del lenguaje html y jugar un poco con ellas...
 								Así que, ¡EMPEZAMOS!
-									<div id="br">
+									<div class="br">
 									</div>
-								Mmmm... eso ha quedado un poco esquinado, ¿te parece si lo centramos con un comando de <span id="mark">
+								Mmmm... eso ha quedado un poco esquinado, ¿te parece si lo centramos con un comando de <span class="mark">
 																																center
 																														</span>
 																																?
@@ -116,7 +132,7 @@
 									<span id="spdd">
 											  Mi profesor David me ha pedido introducir un "formulario"...
 											  Por lo que, con el comando
-																		<span id="mark">
+																		<span class="mark">
 																					form,
 																		</span>
 										     lo dejo introducido por aquí abajo para que me dejes algunos datos
@@ -125,30 +141,30 @@
 										<fieldset>
 												<legend>Cuéntame más sobre ti:</legend>
 												<label for="fname">Por aquí déjame tu nombre:</label>
-													<div id="br">
+													<div class="br">
 													</div>
 														<input type="text" id="fname" name="fname">
-															<div id="br">
+															<div class="br">
 															</div>
 												<label for="lname">Y por aquí tu apellido:</label>
-													<div id="br">
+													<div class="br">
 													</div>
 														<input type="text" id="lname" name="lname">
-															<div id="br">
+															<div class="br">
 															</div>
 												<textarea> </textarea>
 												<button> Click </button>
-													<div id="br">
+													<div class="br">
 													</div>
 										</fieldset>
 										</form>
 									<h3>Lista con mis compañeros de clase ordenada </h3>
-									<div id="coltex">
+									<div class="coltex">
 												En la siguiente lista podemos  ver como mis compañeros han hecho una página html
 												con diferentes temáticas la mar de interesting.
-													<div id="br">
+													<div class="br">
 													</div>
-												Para construirla he usado los comandos <span id="mark">
+												Para construirla he usado los comandos <span class="mark">
 																							ol, li:
 																						</span>
 									</div>
@@ -171,8 +187,8 @@
 									<li> <a href="https://betishtml.000webhostapp.com/betis.html"> Iván </a></li>
 									</ol>
 									<h3> Lista de sitios bonicos de mi Tierruca </h3>
-									<span id="coltex">
-										Esta lista la he hecho con el comando <span id="mark">
+									<span class="coltex">
+										Esta lista la he hecho con el comando <span class="mark">
 																				ul:
 																				</span>
 									</span>
@@ -185,94 +201,78 @@
 										<li> El Bolao </li>
 										</ul>
 									<h3> Tabla: </h3>
-									<span id="coltex"> Por aquí voy a inscribir una tabla para aumentar 
+									<span class="coltex"> Por aquí voy a inscribir una tabla para aumentar 
 									la cultura general, que nunca viene mal si piensas ir a un programa de la tele
-									(y no quieres quedar en ridículo)con el comando  <span id="mark">
+									(y no quieres quedar en ridículo)con el comando  <span class="mark">
 																				table:
 																				</span>
 									</span>
 									Provincias del norte del Muro bañadas por el mar Cantábrico
-									<table style="background-color:white;
-												  width:200px
-												  ;">
+									<table id="tblan">
 										<tr>
-											<th rowspan="4" style="text-align:center;">Galicia</th>
-												<td style="text-align:left;">
+											<th rowspan="4">Galicia</th>
+												<td class="tizq">
 													A Coruña
 												</td>
 										</tr>
 										<tr>
-												<td style="text-align:left;">
+												<td class="tizq">
 													Lugo
 												</td>
 										</tr>
 										<tr>
-												<td style="text-decoration: line-through; text-align:left;">
+												<td class="tach">
 													Orense
 												</td>
 										</tr>
 										<tr>
-												<td style="text-decoration: line-through; text-align:left;">
+												<td class="tach">
 													Pontevedra
 												</td>
 										</tr>
 										<tr>
-											<th style="text-align:center;"> Asturies </th>
-												<td style="text-decoration: line-through; text-align:left;">
+											<th> Asturies </th>
+												<td class="tach">
 													Oviedu
 												</td>
 										</tr>
 										<tr>
-											<th style="text-align:center;">Cantabria aka Tierruca</th>
-												<td style="text-align:left;">
+											<th>Cantabria aka Tierruca</th>
+												<td class="tizq">
 													Fachander
 												</td>
 										</tr>
 										<tr>
-											<th rowspan="3" style="text-align:center;">Esukal Herria</th>
-												<td style="text-align:left;">
+											<th rowspan="3">Esukal Herria</th>
+												<td class="tizq">
 													Bizkaia
 												</td>
 										</tr>
 										<tr>
-												<td style="text-align:left;">
+												<td class="tizq">
 													Gipuzkoa
 												</td>
 										</tr>
 										<tr>
-												<td style="text-decoration: line-through; text-align:left;">
+												<td class="tach">
 													Álava
 												</td>
 										</tr>
 									</table>
-									<h2 style="text-decoration:underline;">Comandos simples: </h2>
-										<h3> Imagen: </h3>
-											<span style="color:#D6ECDB; font-style:italic;"> Dejo una fotico bonica por aquí para animar un poco el tinglao, 
-											que está muy soso eso sí, metida en otro "tr" y "td" con el comando <span style="
-																													font-weight:bold;
-																													background-color: yellow;
-																													color: black;
-																													">
+								<h2>Comandos simples: </h2>
+									<h3> Imagen: </h3>
+										<span class="coltex"> Dejo una fotico bonica por aquí para animar un poco el tinglao, 
+											que está muy soso eso sí, metida en otro "tr" y "td" con el comando <span class="mark">
 																													img src.
 																													</span>
 											</span>
 							</td>
 						</tr>
-							<tr>
-								<td style="text-align:left;">
-									<img src="mush.jpeg" alt="bosque" style="
-																		width: 400px;
-																		height: 250px;
-																		border: 0;
-																		"/>
+						<tr>
+							<td class="tizq">
+									<img src="mush.jpeg" alt="bosque"/>
 									<h3> Br </h3>
-										<div style="color:#D6ECDB;
-													font-style:italic;
-													">									<span style="
-																							font-weight:bold;
-																							background-color: yellow;
-																							color: black;
-																							">
+										<div class="coltex">									<span class="mark">
 																							Br
 																							</span>
 																							es un comando simple que se utiliza cuando quieres dar un salto de línea,
