@@ -4,39 +4,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=2">
 			<title> HTML Nury 1ARI </title>
 		<style>
-				
-		#columna1 {
-					width:635px;
-					}
-		
-		@media screen and (max-width: 400px) {
-				
+				#divfoto {
+						width:600px;
+						}
 				#columna1 {
-					width:300px;
-					}
+						width:700px;
+						}
+				#columna2 {
+							width:700px;
+						}
+				#foto2	{
+						width: 400px;
+						}
+				#columna12 {
+							padding-top:102px;
+							width:600px;
+						}
+		@media screen and (max-width: 400px) {
+				body {
+				background-color:red;
+				}
+				#divfoto {
+						width:200px;
+						}
+				#columna1 {
+						width:400px;
+						}
+				#columna2 {
+					width:400px;
+				}
+				#foto2	{
+						width: 200px;
+						}
+				#columna12 {
+							padding-top:0px;
+							width:400px;
+						}
 		}
 		</style>
 	</head>	
-	<body style="
-				 ">
+	<body>
 				 <div style="
+							display:inline-block;
 							margin-top:8px;
 							background-color:#64966F;
 							vertical-align:top;
-							padding-left:3px;
-							height:1292px;
 							">
 						<div id="columna1" style="
 									vertical-align:top;
 									margin-right:11px;
-									width:635px;
-									height:1200px;
+									width:700px;
+									height:1288px;
 									display:inline-block;
 									">
-								<div>
+								<div id="divfoto">
 											<img src="sta.jpg"/ alt="escaleras" style="	
-																						width:635px;
-																						height:354px;
+																						width:600px;
+																						height:350px;
 																						"/>
 											<h1 style="
 												padding-left:180px;
@@ -48,9 +72,9 @@
 												ESTRUCTURAS HTML 
 											</h1>
 								</div>
-								<div style="
+								<div id="columna12" style="
 											padding-top:102px;
-											padding-left: 9px;
+											padding-left:9px;
 											vertical-align:top;
 											height:100px;
 											">
@@ -60,7 +84,7 @@
 															</div>
 										Mmmm... eso ha quedado un poco esquinado, ¿te parece si lo centramos con un comando de <span style="
 																																	font-weight:bold;
-																																	background-color: yellow;
+																																	background-color:yellow;
 																																	color: black;
 																																	">
 																																	center
@@ -131,11 +155,9 @@
 													</ul>
 								</div>
 						</div>
-						
-						 <div style="
+						<div id="columna2" style="
 						 				background-color:#64966F;
-									padding-left:28px;
-									width:710px;
+									width:700px;
 									height:1288px;
 									display:inline-block;
 									">
@@ -286,7 +308,7 @@
 													</span>
 													<div style="height:1em;">
 																</div>
-													<img src="mush.jpeg" alt="bosque" style="
+													<img src="mush.jpeg" id="foto2" alt="bosque" style="
 																		width: 400px;
 																		height: 250px;
 																		border: 0;
@@ -305,7 +327,7 @@
 																										y al contrario de muchos de los comandos de HTML
 													se cierra "br/", contrariamente a como pensamos que se haría "/br".
 													</div>
-						 </div>
-				 </div>
+						</div>
+				</div>
 	</body>
 	</html>
