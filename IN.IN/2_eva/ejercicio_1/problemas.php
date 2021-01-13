@@ -4,7 +4,6 @@
 	<title> HTML Nury 1ARI </title>
 	</head>	
 		<body style="
-					background-color:;
 					padding-left:100px;
 					">
 				<h1 style="
@@ -22,6 +21,7 @@
 							width:696.46px;
 							">	
 				<h2 style=" 
+							font-size:2em;
 							color:#F7819F;
 							text-decoration: underline;
 							">
@@ -37,7 +37,6 @@
 							padding-bottom:50px;
 							padding-left: 100px;
 							">
-	
 					<input id="alto" name="alto" placeholder="Alto" value="166" onkeyup="calcular()"/>
 					<input id="ancho" name="ancho" placeholder="Ancho" value="95" onkeyup="calcular()"/> 
 					<input id="fondo" name="fondo" placeholder="Fondo" value="65" onkeyup="calcular()"/> 
@@ -46,7 +45,16 @@
 						</div>
 					<button onclick="calcular()"> Calcular </button>
 				</form>
-						Resultado:
+					<img src="brick.png" alt="brick">
+					<div style="
+									height:1em;">
+						</div>
+						<span style="
+									font-size:1.5em;
+									font-weight:bold;
+									">
+							Resultado:
+						</span>
 					<div id="volum" style="
 											display: inline-block;
 											">
@@ -108,7 +116,16 @@
 						</div>
 					<button onclick="calcular2()"> Calcular </button>
 				</form>
-					Resultado:
+				<img src="fuente.png" alt="fuente">
+					<div style="
+									height:1em;">
+						</div>
+					<span style="
+								font-size:1.5em;
+								font-weight:bold;
+								">
+						Resultado:
+					</span>
 					<div id="volum2" style="
 								display: inline-block;
 								">
@@ -119,6 +136,7 @@
 					D=document.getElementById('D').value;
 					P=document.getElementById('P').value;
 					v2=Math.PI*(D/2)*(D/2)*P;
+					v2=Math.round(v2*100)/100;
 					document.getElementById('volum2').
 					innerHTML= +v2+ ' litros.';
 					}		
@@ -189,14 +207,12 @@
 						reg=ap*Pago1;
 						document.getElementById('am+reg').
 						innerHTML= 'Eran '+ap+' amigos al principio, y el precio del regalo es '+reg+ '€.';
-						
 					}
 					calcular3()
 					</script>
 						<div style="
 									height:1em;">
 						</div>
-		
 					<?php
 					if(isset (
 						$_GET['Pago1'])) {$Pago1=$_GET['Pago1'];
@@ -232,20 +248,27 @@
 								height:0em;">
 						</div>
 						Halla el valor de x para que el volumen de la caja sea máximo y calcula dicho volumen:
-						
 				<form style="
 							padding-top:10px;
 							padding-bottom:50px;
 							padding-left: 100px;
 							">
-				
 					<input id="Lado" name="Lado" placeholder="Lado" value="50" onkeyup="calcular4()"/>
 						<div style="
 									height:1em;">
 						</div>
 					<button onclick="calcular4()"> Calcular </button>
 				</form>
-					Resultado:
+					<img src="caja.png" alt="caja">
+					<div style="
+									height:1em;">
+						</div>
+					<span style="
+								font-size:1.5em;
+								font-weight:bold;
+								">
+						Resultado:
+					</span>
 						<div id="volum4" style="
 												display: inline-block;
 												">
@@ -256,6 +279,7 @@
 						Lado=document.getElementById('Lado').value;
 						x4=12/(24*Lado);
 						v4=x4*Math.pow((Lado-(2*x4)),2);
+						v4=Math.round(v4*100)/100;
 						document.getElementById('volum4').
 						innerHTML='El valor de X será '+x4+' cm, y el volumen máximo será '+v4+' cm³.';
 						}
@@ -269,9 +293,9 @@
 						$_GET['Lado'])) {$Lado=$_GET['Lado'];
 						$x4=12/(24*$Lado);
 						$v4=$x4*pow(($Lado-(2*$x4)),2);
+						$v4=round($v4,2);
 						echo 'Resultado: El valor de X será '.$x4.' cm, y el volumen máximo será '.$v4.' cm³.';
 						}
-					
 					?>
 					</div>
 						<div style="
