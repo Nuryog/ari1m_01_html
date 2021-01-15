@@ -50,7 +50,6 @@
 									height:1em;">
 						</div>
 						<span style="
-									font-size:1.5em;
 									font-weight:bold;
 									">
 							Resultado:
@@ -121,7 +120,6 @@
 									height:1em;">
 						</div>
 					<span style="
-								font-size:1.5em;
 								font-weight:bold;
 								">
 						Resultado:
@@ -192,7 +190,18 @@
 						</div>
 					<button onclick="calcular3()"> Calcular </button>
 				</form>
-					Resultado:
+				<img src="regalo.jpg" alt="regalo" style="
+															width:400px;
+															">
+															<div style="
+									height:0em;
+									">
+						</div>
+					<span style="
+								font-weight:bold;
+								">
+						Resultado:
+					</span>
 					<div id="am+reg" style="
 								display: inline-block;
 									">
@@ -264,7 +273,6 @@
 									height:1em;">
 						</div>
 					<span style="
-								font-size:1.5em;
 								font-weight:bold;
 								">
 						Resultado:
@@ -278,7 +286,7 @@
 					function calcular4(){
 						Lado=document.getElementById('Lado').value;
 						x4=12/(24*Lado);
-						v4=x4*Math.pow((Lado-(2*x4)),2);
+						v4=x4*(Math.pow((Lado-(2*x4)),2));
 						v4=Math.round(v4*100)/100;
 						document.getElementById('volum4').
 						innerHTML='El valor de X será '+x4+' cm, y el volumen máximo será '+v4+' cm³.';
