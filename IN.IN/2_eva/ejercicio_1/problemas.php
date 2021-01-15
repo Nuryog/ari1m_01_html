@@ -217,7 +217,7 @@
 						document.getElementById('am+reg').
 						innerHTML= 'Eran '+ap+' amigos al principio, y el precio del regalo es '+reg+ '€.';
 					}
-					calcular3()
+					calcular3();
 					</script>
 						<div style="
 									height:1em;">
