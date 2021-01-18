@@ -285,8 +285,9 @@
 					<script>
 					function calcular4(){
 						Lado=document.getElementById('Lado').value;
-						x4=12/(24*Lado);
-						v4=x4*(Math.pow((Lado-(2*x4)),2));
+						x4= Lado/6;
+						x4=Math.round(x4*100)/100;
+						v4= x4*(Math.pow((Lado-(2*x4)),2));
 						v4=Math.round(v4*100)/100;
 						document.getElementById('volum4').
 						innerHTML='El valor de X será '+x4+' cm, y el volumen máximo será '+v4+' cm³.';
@@ -299,8 +300,9 @@
 					<?php
 								if(isset (
 						$_GET['Lado'])) {$Lado=$_GET['Lado'];
-						$x4=12/(24*$Lado);
-						$v4=$x4*pow(($Lado-(2*$x4)),2);
+						$x4=$Lado/6;
+						$x4=round($x4,2);
+						$v4=$x4*(pow(($Lado-(2*$x4)),2));
 						$v4=round($v4,2);
 						echo 'Resultado: El valor de X será '.$x4.' cm, y el volumen máximo será '.$v4.' cm³.';
 						}
